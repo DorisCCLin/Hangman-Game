@@ -1,0 +1,21 @@
+
+// @import "bourbon/bourbon";
+// @import 'variables';
+// @import 'mixins';
+
+// @import 'navbar';
+// @import 'photoGallery';
+// @import 'content';
+// @import 'footer';
+
+*{
+	margin: 0;
+}
+
+.used {
+	width: 10px;
+	height:20px;
+	border: 1px solid;
+	float: left;
+	margin-right:10px;
+}
