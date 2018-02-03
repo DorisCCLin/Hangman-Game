@@ -8,4 +8,45 @@
   float: left;
   margin-right: 10px; }
 
+.keys {
+  position: relative;
+  text-align: center;
+  margin-top: 5px; }
+
+.keys:active {
+  color: white;
+  background-color: black; }
+
+.keys:focus {
+  color: white;
+  background-color: black; }
+
+.message {
+  width: 200px;
+  height: 20px; }
+
+.bubble {
+  width: 200px;
+  height: 20px; }
+
+#win {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  display: none; }
+
+#winbox {
+  width: 30%;
+  height: 200px;
+  background-color: white;
+  margin: 20% auto; }
+
+#reload {
+  position: relative;
+  width: 50%;
+  height: 10%;
+  background-color: lightgreen; }
+
 /*# sourceMappingURL=main.css.map */
