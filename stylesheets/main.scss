@@ -3,8 +3,8 @@
 // @import 'variables';
 // @import 'mixins';
 
-// @import 'navbar';
-// @import 'photoGallery';
+@import 'keyboard';
+@import 'mario';
 // @import 'content';
 // @import 'footer';
 
@@ -12,6 +12,11 @@
 	margin: 0;
 }
 
+body {
+	// position:fixed;
+	background-image: url('img/background.png');
+	backgound-size: cover;
+}
 
 .used {
 	width: 10px;
@@ -21,11 +26,7 @@
 	margin-right:10px;
 }
 
-.keys {
-	position:relative;
-	text-align: center;
-	margin-top: 5px;
-}
+
 
 .keys:active {
 

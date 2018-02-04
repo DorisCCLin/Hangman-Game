@@ -1,8 +1,3 @@
-//loop through 'what' aud check if a word is present
-
-//how to subsititude the correct letter eith the current dash
-
-//when you guess correct ->happens
 
 var answers= ['eggs','banana','happy','opt','fox','range']
 var randomAns = answers[Math.floor(Math.random()* answers.length)];
@@ -30,11 +25,6 @@ var alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q'
 for(i=0;i< alpha.length;i++){
 var key = document.createElement('div')
 var ABC = document.createTextNode(alpha[i])
-	key.style.width='50px'
-	key.style.height="50px"
-	key.style.border='1px solid'
-	key.style.display = 'inline-block'
-	key.style.margin = '10px'
 	keyBoard.appendChild(key)
 	key.appendChild(ABC)
 	key.setAttribute('class','keys')
@@ -42,18 +32,15 @@ var ABC = document.createTextNode(alpha[i])
 
 var keys = document.getElementsByClassName('keys');
 
-
-
-// for(i=0;i<26;i++){
-//    keys[i].innerHTML = alpha[i]
-// }
-
 var clicks = 0;
 for(let i=0;i<keys.length;i++){
 	keys[i].addEventListener('click', function(){
 		var text = keys[i].textContent;	
 		console.log(text)
-		check(text);	
+		check(text);
+		mario.style.animationPlayState ='running';
+		mario.style.animationPlayState ='initial';
+
 	})
 }
 
@@ -61,11 +48,13 @@ var arr = []
 var arrUsed = []
 var msg = document.getElementById('message');
 var bubble = document.getElementById('bubble');
+var mario = document.getElementById('mario');
 
 function check(letter){
 var found = 0
 clicks += 1;
 for (var i=0; i<array.length; i++){
+	mario.style.animationPlayState ='initial';
 	if (letter === array[i]){
 			paras[i].innerText = letter
 			found++
@@ -81,6 +70,7 @@ for (var i=0; i<array.length; i++){
 	}							
 	
 if (found === 0) {
+	mario.style.animationPlayState ='initial';
 	if (arrUsed.includes(letter) === true){
 			clicks -= 1;
 			bubble.innerHTML = 'You have guessed '+ letter	

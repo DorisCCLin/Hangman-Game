@@ -1,0 +1,21 @@
+#keyBoard{
+	position:absolute;
+	width: 40%;
+	height:400px;
+	right:100px;
+
+
+}
+
+
+.keys {
+	position:relative;
+	text-align: center;
+	margin-top: 5px;
+	width: 60px;
+    height: 60px;
+	display: inline-block;
+	margin: 10px;
+	background-image: url('img/keys.png');
+	background-size:cover;
+}
