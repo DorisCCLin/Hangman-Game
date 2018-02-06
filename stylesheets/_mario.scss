@@ -13,7 +13,38 @@
 	left:280px;
 	animation: jump 1.5s ease 0s normal;
 	animation-play-state: paused;
+//   animation-iteration-count: 1;
 }
+
+#letters{
+  position: absolute;
+  top: 250px;
+  left:200px;
+}
+
+.paras {
+  display:inline-block;
+  margin-right:10px;
+  font-size:30px;
+}
+
+#bubble {
+  position:absolute;
+  margin-top: 65px;
+  margin-left: 200px;
+   width: 50%;
+  height:20px;
+}
+
+
+#message {
+  position:absolute;
+  margin-top: 90px;
+  margin-left: 200px;
+  width: 50%;
+  height:20px;
+}
+
 
 @keyframes jump{
 	0%{

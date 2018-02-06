@@ -1,0 +1,17 @@
+#lose{
+	@include modal;
+	z-index: 2;
+}
+
+#losebox {
+   @include box;
+   background-color: DimGrey;
+}
+
+#reload_l {
+	@include reload;
+}
+
+#reload_1:hover {
+	@include reload_hover;
+}

@@ -5,15 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-
-<!--  winning box -->
-<div id='win'>
-	<div id='winbox'>
-		Congrats!
-		<div id ='reload'>play again!</div>
-	</div>
-	
-</div>
+<div id='background'>
+<h1>Mario Hangman Game</h1>	
 
 <div ><img id='Qbox' src="css/img/BlockQuestion.png"></div>
 <div ><img id='mario' src="css/img/mario.png"></div>
@@ -22,12 +15,32 @@
 <div>
 	<div id='keyBoard'></div>
 </div>
-
-<div id='message'></div>
 <div id='bubble'></div>
+<div id='message'></div>
 
+</div>
 
+<!--  winning box -->
+<div id='win'>
+	<div id='winbox'>
+		Congrats! You've made it<br/>
+		<br/>
+		<img src="css/img/win.png" width='80px' height= '120px'></img>
+		<div id ='reload_w'>Play Again</div>
+	</div>	
+</div>
 
+<!-- losing box -->
+<div id='lose'>
+	<div id='losebox'>
+		Oh no! You are dead!<br/>
+		<br/>
+		<br/>
+		<img src="css/img/badMushroom.png" width='80px'></img><br/>
+
+		<div id ='reload_l'>Play Again</div>
+	</div>	
+</div>
 
 
 <script type="text/javascript" src='index.js'></script>

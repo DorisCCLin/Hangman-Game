@@ -1,0 +1,18 @@
+#win{
+	@include modal;
+	z-index: 1;
+}
+
+#winbox {
+   @include box;
+   background-color: CornflowerBlue;
+   
+}
+
+#reload_w {
+	@include reload;
+}
+
+#reload_w:hover {
+	@include reload_hover;
+}
